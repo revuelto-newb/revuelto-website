@@ -1,18 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Revuelto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revuelto | Car Collector RPG Discord Bot</title>
+    <meta name="description" content="Collect. Race. Build Your Dream Garage. Revuelto is a premium collector RPG bot for Discord focusing on long-term vehicle progression.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Fonts: Inter for UI, JetBrains Mono for stats/code aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<h1>Revuelto</h1>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text" aria-label="Revuelto Home">REVUELTO</a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
 
-<p>Collector RPG Discord Bot.</p>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#about">About</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1058564693192618064&permissions=2147609600&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer" class="btn-primary-small">Add to Discord</a>
+            </div>
+        </div>
+    </nav>
 
-<p><a href="privacy.html">Privacy Policy</a></p>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Collect. Race.<br>Build Your Dream Garage.</h1>
+                <p class="subtitle">Revuelto brings an authentic car collector RPG experience to your Discord server. Discover rare exotics, upgrade your fleet, and dominate the streets.</p>
+                <div class="hero-actions">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1058564693192618064&permissions=2147609600&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer" class="btn-primary">Invite Bot</a>
+                    <a href="https://discord.gg/BYtGPcSWS3" target="_blank" rel="noopener noreferrer" class="btn-secondary">Join Support Server</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" aria-label="Showcased Car Stat Card">
+                <div class="stat-card">
+                    <div class="stat-card-border top-border" aria-hidden="true">━━━━━━━━━━━━━━━━━━━━━━</div>
+                    
+                    <div class="stat-card-header">
+                        <h2>REVUELTO</h2>
+                        <span class="tagline">Collect Your Dream Garage</span>
+                    </div>
 
-<p><a href="terms.html">Terms of Service</a></p>
+                    <div class="car-image-container fade-transition" id="car-image-container">
+                        <img src="assets/images/revuelto.png" alt="Lamborghini Revuelto" class="car-image" id="hero-car-image" width="300" height="150">
+                    </div>
+                    
+                    <div class="stat-details fade-transition" id="stat-details-container">
+                        <div class="stat-row title-row">
+                            <span class="bracket" aria-hidden="true">[</span>
+                            <span class="car-name" id="hero-car-name">Lamborghini Revuelto</span>
+                            <span class="bracket" aria-hidden="true">]</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">PR</span>
+                            <span class="stat-value" id="hero-car-pr">600</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Rarity</span>
+                            <span class="stat-value rarity-mythic" id="hero-car-rarity">Mythic</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Value</span>
+                            <span class="stat-value" id="hero-car-price">$48,000,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card-border bottom-border" aria-hidden="true">━━━━━━━━━━━━━━━━━━━━━━</div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Core Features</h2>
+                <p>Everything you need to run a high-octane collection on your server.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Car Collection</h3>
+                    <p>Discover and collect hundreds of meticulously detailed vehicles across various tiers and rarities.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Racing</h3>
+                    <p>Put your garage to the test in dynamic races against other players or challenging AI opponents.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Garage</h3>
+                    <p>Manage, organize, and showcase your prized collection to the rest of the server.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Prestige</h3>
+                    <p>Push past the limits. Reset your progress for exclusive multipliers, badges, and elite vehicles.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Achievements</h3>
+                    <p>Unlock unique titles and rewards by completing long-term collecting and racing milestones.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Interactive Jobs</h3>
+                    <p>Take on unique jobs where every profession features its own interactive gameplay. Each job offers a different experience instead of a simple button press.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-content">
+                <h2>More Than an Economy Bot</h2>
+                <p>Revuelto is designed for servers that want a deep, engaging progression system. Unlike standard economy bots where numbers just go up, Revuelto focuses on the tangible thrill of the hunt—collecting, tuning, and racing your dream cars.</p>
+                <p>Every vehicle has distinct stats, every race requires strategy, and every prestige level earns you respect in the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">REVUELTO</span>
+                <p class="copyright">© 2026 Revuelto.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="https://github.com/revuelto-newb" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://discord.gg/BYtGPcSWS3" target="_blank" rel="noopener noreferrer">Support Server</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
